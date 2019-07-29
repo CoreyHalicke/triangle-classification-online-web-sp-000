@@ -12,6 +12,7 @@ class Triangle
     if @one <= 0 || @two <= 0 || @three <= 0
       raise TriangleError
     elsif @one >= @two + @three
+      raise TriangleError
     elsif @one == @two && @two == @three
       :equilateral
     elsif @two == @three || @one == @three || @one == @two
