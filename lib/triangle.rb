@@ -12,7 +12,7 @@ class Triangle
       :equilateral
     elsif @two == @three || @one == @three || @one == @two
       :isosceles
-    elsif  @one <= 0 || @two <= 0 || @three <= 0
+    elsif  @one < 1 || @two < 1 || @three < 1
       raise TriangleError
     elsif @two != @three || @one != @three || @one != @two
       :scalene
